@@ -1,7 +1,7 @@
 package main
 
 import (
-	"autoSign/config"
+	// "autoSign/config"
 	"autoSign/platform"
 	"strings"
 	"os"

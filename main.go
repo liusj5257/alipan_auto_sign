@@ -16,11 +16,11 @@ func main() {
 	// kkCookie := config.ConfigInstance.KKCookie
 
 	args := os.Args
-	pushPlusToken := args[0]
-	refreshTokens := args[1]
-	bilibiliCookies := args[2]
-	jdCookies := args[3]
-	kkCookie := args[4]
+	pushPlusToken := args[1]
+	refreshTokens := args[2]
+	bilibiliCookies := args[3]
+	jdCookies := args[4]
+	kkCookie := args[5]
 	fmt.Println("pushPlusToken:", pushPlusToken)
 	fmt.Println("refreshTokens:", refreshTokens)
 	fmt.Println("bilibiliCookies:", bilibiliCookies)
@@ -47,11 +47,11 @@ func main() {
 			jd.Run(pushPlusToken, value)
 		}
 	}
-	if kkCookie != "null" {
-		kkCookieList := strings.Split(kkCookie, ",")
-		kk := &platform.KK{}
-		for _, value := range kkCookieList {
-			kk.Run(pushPlusToken, value)
-		}
-	}
+	// if kkCookie != "null" {
+	// 	kkCookieList := strings.Split(kkCookie, ",")
+	// 	kk := &platform.KK{}
+	// 	for _, value := range kkCookieList {
+	// 		kk.Run(pushPlusToken, value)
+	// 	}
+	// }
 }

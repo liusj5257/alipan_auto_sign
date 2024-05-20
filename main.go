@@ -5,6 +5,7 @@ import (
 	"autoSign/platform"
 	"strings"
 	"os"
+	"fmt"
 )
 
 func main() {
@@ -20,6 +21,11 @@ func main() {
 	bilibiliCookies := args[2]
 	jdCookies := args[3]
 	kkCookie := args[4]
+	fmt.Println("pushPlusToken:", pushPlusToken)
+	fmt.Println("refreshTokens:", refreshTokens)
+	fmt.Println("bilibiliCookies:", bilibiliCookies)
+	fmt.Println("jdCookies:", jdCookies)
+	fmt.Println("kkCookie:", kkCookie)
 	if refreshTokens != "null" {
 		refreshTokenList := strings.Split(refreshTokens, ",")
 		aliCloudDisk := &platform.AliCloudDisk{}

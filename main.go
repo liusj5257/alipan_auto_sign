@@ -8,11 +8,11 @@ import (
 )
 
 func main() {
-	pushPlusToken := config.ConfigInstance.PushPlusToken
-	refreshTokens := config.ConfigInstance.RefreshToken
-	bilibiliCookies := config.ConfigInstance.BilibiliCookie
-	jdCookies := config.ConfigInstance.JdCookie
-	kkCookie := config.ConfigInstance.KKCookie
+	// pushPlusToken := config.ConfigInstance.PushPlusToken
+	// refreshTokens := config.ConfigInstance.RefreshToken
+	// bilibiliCookies := config.ConfigInstance.BilibiliCookie
+	// jdCookies := config.ConfigInstance.JdCookie
+	// kkCookie := config.ConfigInstance.KKCookie
 
 	args := os.Args
 	pushPlusToken := args[1]

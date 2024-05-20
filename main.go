@@ -14,10 +14,6 @@ func main() {
 	// bilibiliCookies := config.ConfigInstance.BilibiliCookie
 	// jdCookies := config.ConfigInstance.JdCookie
 	// kkCookie := config.ConfigInstance.KKCookie
-  err := godotenv.Load()
-  if err != nil {
-    log.Fatal(err)
-  }
 	pushPlusToken := os.Getenv("PUSHPLUS_TOKEN")
 	refreshTokens := os.Getenv("REFRESH_TOKEN")
 	bilibiliCookies := os.Getenv("BILIBILI_COOKIE")

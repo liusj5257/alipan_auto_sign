@@ -15,11 +15,11 @@ func main() {
 	// kkCookie := config.ConfigInstance.KKCookie
 
 	args := os.Args
-	pushPlusToken := args[1]
-	refreshTokens := args[2]
-	bilibiliCookies := args[3]
-	jdCookies := args[4]
-	kkCookie := args[5]
+	pushPlusToken := args[0]
+	refreshTokens := args[1]
+	bilibiliCookies := args[2]
+	jdCookies := args[3]
+	kkCookie := args[4]
 	if refreshTokens != "null" {
 		refreshTokenList := strings.Split(refreshTokens, ",")
 		aliCloudDisk := &platform.AliCloudDisk{}

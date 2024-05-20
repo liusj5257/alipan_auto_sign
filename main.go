@@ -25,7 +25,7 @@ func main() {
 	fmt.Println("refreshTokens:", refreshTokens)
 	fmt.Println("bilibiliCookies:", bilibiliCookies)
 	fmt.Println("jdCookies:", jdCookies)
-	fmt.Println("kkCookie:", kkCookie)
+	// fmt.Println("kkCookie:", kkCookie)
 	if refreshTokens != "null" {
 		refreshTokenList := strings.Split(refreshTokens, ",")
 		aliCloudDisk := &platform.AliCloudDisk{}

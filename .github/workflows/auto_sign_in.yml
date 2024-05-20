@@ -19,7 +19,12 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    env:
+      PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+      REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
+      BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE }}
+      JD_COOKIE: ${{ secrets.JD_COOKIE }}
+      KK_COOKIE: ${{ secrets.KK_COOKIE }}
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
@@ -36,4 +41,4 @@ jobs:
         run: |
           go build &&
           sudo chmod 777 ./autoSign &&
-          ./autoSign ${{ secrets.PUSHPLUS_TOKEN }} ${{ secrets.REFRESH_TOKEN }} ${{ secrets.BILIBILI_COOKIE }} ${{ secrets.JD_COOKIE }} ${{ secrets.KK_COOKIE }}  12345
+          ./autoSign

@@ -15,17 +15,16 @@ func main() {
 	// jdCookies := config.ConfigInstance.JdCookie
 	// kkCookie := config.ConfigInstance.KKCookie
 
-	args := os.Args
-	pushPlusToken := args[1]
-	refreshTokens := args[2]
-	bilibiliCookies := args[3]
-	jdCookies := args[4]
-	// kkCookie := args[5]
+	pushPlusToken := os.Getenv("PUSHPLUS_TOKEN")
+	refreshTokens := os.Getenv("REFRESH_TOKEN")
+	bilibiliCookies := os.Getenv("BILIBILI_COOKIE")
+	jdCookies := os.Getenv("JD_COOKIE")
+	kkCookie := os.Getenv("KK_COOKIE")
 	fmt.Println("pushPlusToken:", pushPlusToken)
 	fmt.Println("refreshTokens:", refreshTokens)
 	fmt.Println("bilibiliCookies:", bilibiliCookies)
 	fmt.Println("jdCookies:", jdCookies)
-	// fmt.Println("kkCookie:", kkCookie)
+	fmt.Println("kkCookie:", kkCookie)
 	if refreshTokens != "null" {
 		refreshTokenList := strings.Split(refreshTokens, ",")
 		aliCloudDisk := &platform.AliCloudDisk{}

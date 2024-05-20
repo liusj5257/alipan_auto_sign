@@ -20,7 +20,7 @@ func main() {
 	refreshTokens := args[2]
 	bilibiliCookies := args[3]
 	jdCookies := args[4]
-	kkCookie := args[5]
+	// kkCookie := args[5]
 	fmt.Println("pushPlusToken:", pushPlusToken)
 	fmt.Println("refreshTokens:", refreshTokens)
 	fmt.Println("bilibiliCookies:", bilibiliCookies)

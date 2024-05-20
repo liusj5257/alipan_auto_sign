@@ -9,6 +9,7 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron:  '11 23 * * *'
   workflow_dispatch:
+  push:
 
   # Allows you to run this workflow manually from the Actions tab
 

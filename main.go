@@ -17,7 +17,7 @@ func main() {
 	pushPlusToken := os.Getenv("PUSHPLUS_TOKEN")
 	refreshTokens := os.Getenv("REFRESH_TOKEN")
 	bilibiliCookies := os.Getenv("BILIBILI_COOKIE")
-	jdCookies := os.Getenv("JD")
+	jdCookies := os.Getenv("JD_COOKIE")
 	kkCookie := os.Getenv("KK_COOKIE")
 	fmt.Println("pushPlusToken1:", pushPlusToken)
 	fmt.Println("refreshTokens:", refreshTokens)

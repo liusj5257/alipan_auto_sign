@@ -16,7 +16,7 @@ env:
   PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
   REFRESH_TOKEN: ${{ secrets.REFRESH_TOKEN }}
   BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE }}
-  JD_COOKIE: ${{ secrets.JD_COOKIE }}
+  JD_COOKIE: "null"
   KK_COOKIE: ${{ secrets.KK_COOKIE }}
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
